@@ -59,7 +59,11 @@ client.on('message', message => {
         break;
 	case 3:
 			var newquo = data+';'+message.content.substring(4);
-			//const GitHub = require('github.js');
+			var GitHub = require('github-api');
+
+// by default all requests are unauthenticated
+// unauthenticated clients are limited to 60 request per hour
+			var noAuth = new GitHub();
 			repo.write('master', 'BrooksBot/quotelog.txt', 'YOUR_NEW_CONTENTS', 'YOUR_COMMIT_MESSAGE', function(err) {});
 
 //			fs.writeFile('quotelog.txt',newquo, 'utf8', function(err, data) {  
