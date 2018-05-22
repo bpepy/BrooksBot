@@ -59,11 +59,30 @@ client.on('message', message => {
         break;
 	case 3:
 			var newquo = data+';'+message.content.substring(4);
-			fs.writeFile('quotelog.txt',newquo, 'utf8', function(err, data) {  
-			    if (err) throw err;
+			// Creates a new instance of the Github object exposed by Github.js
+			var github = new Github({
+			  username: 'bpepy',
+			  password: 'pass4_GitHub',
+			  auth: 'basic'
 			});
+	 
+			// Creates an object representing the repository you want to work with
+			var repository = github.getRepo('bpepy', 'BrooksBot');
+	 
+			// Creates a new file (or updates it if the file already exists)
+			// with the content provided
+			repository.write(
+			   'master', // e.g. 'master'
+			   'BrooksBot/quotelog.txt', // e.g. 'blog/index.md'
+			   'test', // e.g. 'Hello world, this is my new content'
+			   'new quote added', // e.g. 'Created new index'
+			   function(err) {}
+			);
+
+//			fs.writeFile('quotelog.txt',newquo, 'utf8', function(err, data) {  
+//			    if (err) throw err;
+//			});
 			message.channel.send('Fake news added');
-			var test=0;
 	break;
 	case 4:
 	break;
