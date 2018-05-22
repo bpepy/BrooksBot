@@ -39,7 +39,7 @@ client.on('message', message => {
 	case '2':
 			var stopcheck = [];
 	   for (rand=Math.floor(Math.random() * quoSize); stopcheck.length < quoSize;rand=Math.floor(Math.random() * quoSize)) {
-		if (stopcheck.includes(rand)==false) {
+		if (stopcheck.includes(rand)===false) {
 			if (wordInString(quo[rand].toLowerCase(),mess.substring(7))) {
 		                    message.channel.send(quo[rand]);
 				stopcheck.splice(0,4);
