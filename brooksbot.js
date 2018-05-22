@@ -6,9 +6,20 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+	
+	//check quotes 
+	var fs = require('fs');
+
+	try {  
+	    	var data = fs.readFileSync('quotelog.txt', 'utf8');    
+	} catch(e) {}
+
+	var quo = data.split(";");
+	var quoSize = quo.length;
+	var rand = Math.floor(Math.random() * quoSize);
 
         if (message.content.substring(0,6) === '-quote') {
-    	    message.channel.send('HENRIK!');
+    	    message.channel.send(quo[rand]);
   	    }
 	
 });
