@@ -58,6 +58,7 @@ client.on('message', message => {
 		}
         break;
 	case 3:
+			message.channel.send('Fake news added');
 			var newquo = data+';'+message.content.substring(4);
 			var GitHub = require('github-api');
 
@@ -69,7 +70,7 @@ client.on('message', message => {
 //			fs.writeFile('quotelog.txt',newquo, 'utf8', function(err, data) {  
 //			    if (err) throw err;
 //			});
-			message.channel.send('Fake news added');
+			
 	break;
 	case 4:
 	break;
