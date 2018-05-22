@@ -63,6 +63,7 @@ client.on('message', message => {
 			    if (err) throw err;
 			});
 			message.channel.send('Fake news added');
+			var test=0;
 	break;
 	case 4:
 	break;
