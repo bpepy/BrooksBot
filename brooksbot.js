@@ -58,7 +58,11 @@ client.on('message', message => {
 		}
         break;
 	case 3:
-			
+			var newquo = data+';'+message.content.substring(4);
+			fs.writeFile('quotelog.txt',newquo, 'utf8', function(err, data) {  
+			    if (err) throw err;
+			});
+			message.channel.send('Fake news added');
 	break;
 	case 4:
 	break;
