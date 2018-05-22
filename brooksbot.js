@@ -20,16 +20,17 @@ client.on('message', message => {
 
         if (message.content === '-quote') {
     	    var type = 1;
-		message.channel.send(type);
   	}
 	elseif (message.content.substring(0,6) ==='-quote') {
 	    var type = 2;
-		message.channel.send(type);
 	}
 	elseif (message.content.substring(0,4) === '-add') {
 	    var type = 3;
-		message.channel.send(type);
 	}
+	else {
+		var type = 4;
+	}
+	message.channel.send(type);		
 	
 });
 
