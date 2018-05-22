@@ -59,7 +59,7 @@ client.on('message', message => {
         break;
 	case 3:
 			message.channel.send('Fake news added');
-			var newquo = data+';'+message.content.substring(4);
+/*			var newquo = data+';'+message.content.substring(4);
 			var GitHub = require('github-api');
 
 // by default all requests are unauthenticated
@@ -70,7 +70,7 @@ client.on('message', message => {
 //			fs.writeFile('quotelog.txt',newquo, 'utf8', function(err, data) {  
 //			    if (err) throw err;
 //			});
-			
+*/			
 	break;
 	case 4:
 	break;
