@@ -32,14 +32,14 @@ client.on('message', message => {
 	}
 	
 	switch(type) {
-	case '1':
+	case 1:
 			var rand = Math.floor(Math.random() * quoSize);
 			message.channel.send(quo[rand]);
 	break;
-	case '2':
+	case 2:
 			var stopcheck = [];
 	   for (rand=Math.floor(Math.random() * quoSize); stopcheck.length < quoSize;rand=Math.floor(Math.random() * quoSize)) {
-		if (stopcheck.includes(rand)===false) {
+		if (stopcheck.includes(rand)==false) {
 			if (wordInString(quo[rand].toLowerCase(),mess.substring(7))) {
 		                    message.channel.send(quo[rand]);
 				stopcheck.splice(0,4);
@@ -58,10 +58,10 @@ client.on('message', message => {
 		}
 	}
         break;
-	case '3':
+	case 3:
 			
 	break;
-	case '4':
+	case 4:
 	break;
     	}
 	
