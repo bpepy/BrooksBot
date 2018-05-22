@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-var GitHUb = require('github.js');
+var GitHub = require('github-api');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -30,6 +30,7 @@ client.on('message', message => {
 	
 	switch(type) {
 	case 1:
+			
 			var rand = Math.floor(Math.random() * quoSize);
 			message.channel.send(quo[rand]);
 	break;
