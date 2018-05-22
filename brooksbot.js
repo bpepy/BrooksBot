@@ -19,15 +19,12 @@ client.on('message', message => {
 	var rand = Math.floor(Math.random() * quoSize);
 
         if (message.content === '-quote') {
-    	    var type = 1;
-  	}
-	elseif (message.content.substring(0,6) ==='-quote') {
-	    var type = 2;
-	}
-	elseif (message.content.substring(0,4) === '-add') {
-	    var type = 3;
-	}
-	else {
+    		var type = 1;
+  	}else if (message.content.substring(0,6) === '-quote') {
+		var type = 2;
+	}else if (message.content.substring(0,4) === '-add') {
+		var type = 3;
+	}else {
 		var type = 4;
 	}
 	message.channel.send(type);		
