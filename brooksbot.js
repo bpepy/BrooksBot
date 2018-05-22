@@ -59,7 +59,7 @@ client.on('message', message => {
         break;
 	case 3:
 			var newquo = data+';'+message.content.substring(4);
-			const GitHub = require('github.js');
+			//const GitHub = require('github.js');
 			repo.write('master', 'BrooksBot/quotelog.txt', 'YOUR_NEW_CONTENTS', 'YOUR_COMMIT_MESSAGE', function(err) {});
 
 //			fs.writeFile('quotelog.txt',newquo, 'utf8', function(err, data) {  
