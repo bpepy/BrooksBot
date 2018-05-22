@@ -9,9 +9,6 @@ client.on('message', message => {
 	
 	//check quotes 
 	var fs = require('fs');
-	function wordInString(s, word){
-	return new RegExp( '\\b' + word + '\\b', 'i').test(s);
-	}
 
 	try {  
 	    	var data = fs.readFileSync('quotelog.txt', 'utf8');    
@@ -36,27 +33,27 @@ client.on('message', message => {
 			message.channel.send(quo[rand]);
 	break;
 	case '2':
-			var mess = message.content.toLowerCase();
-			var stopcheck = [];
-	   for (rand=Math.floor(Math.random() * quoSize); stopcheck.length < quoSize;rand=Math.floor(Math.random() * quoSize)) {
-		if (stopcheck.includes(rand)==false) {
-			if (wordInString(quo[rand].toLowerCase(),mess.substring(7))) {
-		                    message.channel.send(quo[rand]);
-				stopcheck.splice(0,4);
-				break;
-			}
-			else {
-				stopcheck.splice(0,0,rand);
-			}
-		}
-		else {
-			continue;
-		}
-	   }
-		if (stopcheck.length >= quoSize) {
-	        		message.channel.send('No quote found');
-		}
-	}
+//			var mess = message.content.toLowerCase();
+//			var stopcheck = [];
+//	   for (rand=Math.floor(Math.random() * quoSize); stopcheck.length < quoSize;rand=Math.floor(Math.random() * quoSize)) {
+//		if (stopcheck.includes(rand)==false) {
+//			if (wordInString(quo[rand].toLowerCase(),mess.substring(7))) {
+//		                    message.channel.send(quo[rand]);
+//				stopcheck.splice(0,4);
+//				break;
+//			}
+//			else {
+//				stopcheck.splice(0,0,rand);
+//			}
+//		}
+//		else {
+//			continue;
+//		}
+//	   }
+//		if (stopcheck.length >= quoSize) {
+//	        		message.channel.send('No quote found');
+//		}
+//	}
         break;
 	case '3':
 			
