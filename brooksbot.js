@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+var GitHUb = require('github.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
