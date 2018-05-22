@@ -12,7 +12,7 @@ client.on('message', message => {
 }
 var mess=message.contents.toLowerCase();
 
-if (message.contents.substring(0,6) == '-quote') {
+if (message.contents.substring(0,6) === '-quote') {
         var args = message.contents.substring(6).split(' ');
         var cmd = args[0];
 //check quotes 
@@ -26,7 +26,7 @@ var quo = data.split(";");
 var quoSize = quo.length;
 
 
-	if (message.contents.substring(6,7) == ' ') {
+	if (message.contents.substring(6,7) === ' ') {
 	   var stopcheck = [];
 	   for (rand=Math.floor(Math.random() * quoSize); stopcheck.length < quoSize;rand=Math.floor(Math.random() * quoSize)) {
 		if (stopcheck.includes(rand)==false) {
@@ -59,7 +59,7 @@ var quoSize = quo.length;
 	        }
 	}
 }
-if (message.contents.substring(0,4) == '-add') {
+if (message.contents.substring(0,4) === '-add') {
         var args = message.contents.substring(4).split(' ');
         var cmd = args[0];
 //check quotes 
