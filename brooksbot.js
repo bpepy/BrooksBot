@@ -6,6 +6,12 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+	var fs = require('fs');
+
+try {  
+    var data = fs.readFileSync('quotelog.txt', 'utf8');    
+} catch(e) {}
+	
     switch(message.author.bot) {
 
 	case true:
