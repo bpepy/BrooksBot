@@ -12,7 +12,7 @@ client.on('message', message => {
 	}
 var mess=message.contents.toLowerCase();
 
-if (message.contents.substring(0,6) === '-quote') {
+if (message.content.substring(0,6) === '-quote') {
 //check quotes 
 var fs = require('fs');
 try {  
