@@ -27,7 +27,14 @@ client.on('message', message => {
 	}else {
 		var type = 4;
 	}
-	//message.channel.send(type);		
+	
+	switch(message.author.bot) {
+	case true:
+	break;
+	case false:
+    	    message.channel.send(type);
+        break;
+    }
 	
 });
 
