@@ -5,14 +5,13 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-function wordInString(s, word){
-  return new RegExp( '\\b' + word + '\\b', 'i').test(s);
-}
-
 client.on('message', message => {
 	
 	//check quotes 
 	var fs = require('fs');
+	function wordInString(s, word){
+	return new RegExp( '\\b' + word + '\\b', 'i').test(s);
+	}
 
 	try {  
 	    	var data = fs.readFileSync('quotelog.txt', 'utf8');    
