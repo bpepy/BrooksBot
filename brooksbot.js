@@ -28,11 +28,11 @@ client.on('message', message => {
 	}
 	
 	switch(type) {
-	case '1':
+	case 1:
 			var rand = Math.floor(Math.random() * quoSize);
 			message.channel.send(quo[rand]);
 	break;
-	case '2':
+	case 2:
 //			var mess = message.content.toLowerCase();
 //			var stopcheck = [];
 //	   for (rand=Math.floor(Math.random() * quoSize); stopcheck.length < quoSize;rand=Math.floor(Math.random() * quoSize)) {
@@ -55,10 +55,10 @@ client.on('message', message => {
 //		}
 //	}
         break;
-	case '3':
+	case 3:
 			
 	break;
-	case '4':
+	case 4:
 	break;
     	}
 	
