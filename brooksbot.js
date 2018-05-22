@@ -5,6 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+function wordInString(s, word){
+  return new RegExp( '\\b' + word + '\\b', 'i').test(s);
+}
+
 client.on('message', message => {
 	
 	//check quotes 
@@ -16,7 +20,6 @@ client.on('message', message => {
 
 	var quo = data.split(";");
 	var quoSize = quo.length;
-	var rand = Math.floor(Math.random() * quoSize);
 
         if (message.content === '-quote') {
     		var type = 1;
@@ -28,13 +31,39 @@ client.on('message', message => {
 		var type = 4;
 	}
 	
-	switch(message.author.bot) {
-	case true:
+	switch(type) {
+	case '1':
+			var rand = Math.floor(Math.random() * quoSize);
+			message.channel.send(quo[rand]);
 	break;
-	case false:
-    	    message.channel.send(type);
+	case '2':
+			var stopcheck = [];
+	   for (rand=Math.floor(Math.random() * quoSize); stopcheck.length < quoSize;rand=Math.floor(Math.random() * quoSize)) {
+		if (stopcheck.includes(rand)==false) {
+			if (wordInString(quo[rand].toLowerCase(),mess.substring(7))) {
+		                    message.channel.send(quo[rand]);
+				stopcheck.splice(0,4);
+				break;
+			}
+			else {
+				stopcheck.splice(0,0,rand);
+			}
+		}
+		else {
+			continue;
+		}
+	   }
+		if (stopcheck.length >= quoSize) {
+	        		message.channel.send('No quote found');
+		}
+	}
         break;
-    }
+	case '3':
+			
+	break;
+	case '4':
+	break;
+    	}
 	
 });
 
