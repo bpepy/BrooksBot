@@ -27,7 +27,7 @@ client.on('message', message => {
 	}else {
 		var type = 4;
 	}
-	message.channel.send(type);		
+	//message.channel.send(type);		
 	
 });
 
