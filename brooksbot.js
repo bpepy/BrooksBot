@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-var GitHub = require('github-api');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -60,6 +59,10 @@ client.on('message', message => {
 		}
         break;
 	case 3:
+			var newquo = data+';'+message.content.substring(4);
+			fs.writeFile('quotelog.txt',newquo, (err) => {
+  				if (err) throw err;
+			});
 			message.channel.send('Fake news added');
 /*			var newquo = data+';'+message.content.substring(4);
 			var GitHub = require('github-api');
