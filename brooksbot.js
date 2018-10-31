@@ -23,7 +23,7 @@ client.on('message', message => {
 		var type = 2;
 	}else if (message.content.substring(0,4) === '-add') {
 		var type = 3;
-	}else if (message.content === '-last') {
+	}else if (message.content.substring(0,5) === '-last') {
 		var type = 4;
 	}else {
 		var type = 5;
