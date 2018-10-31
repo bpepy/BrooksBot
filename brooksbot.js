@@ -80,7 +80,11 @@ client.on('message', message => {
 */			
 	break;
 	case 4:
-			var minus = parseInt(message.content.substring(5));
+			if (message.content === '-last') {
+				var minus = 1;
+			}else {
+			var minus = parseInt(message.content.substring(5)) + 1;
+			}
 			var last = quoSize - minus;
 			message.channel.send(quo[last]);
 	case 5:
