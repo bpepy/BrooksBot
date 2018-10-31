@@ -23,8 +23,10 @@ client.on('message', message => {
 		var type = 2;
 	}else if (message.content.substring(0,4) === '-add') {
 		var type = 3;
-	}else {
+	}else if (message.content === '-last') {
 		var type = 4;
+	}else {
+		var type = 5;
 	}
 	
 	switch(type) {
@@ -78,6 +80,10 @@ client.on('message', message => {
 */			
 	break;
 	case 4:
+			var minus = parseInt(message.content.substring(5));
+			var last = quoSize - minus;
+			message.channel.send(quo[last]);
+	case 5:
 	break;
     	}
 	
