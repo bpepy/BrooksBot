@@ -25,12 +25,14 @@ client.on('message', message => {
 		var type = 3;
 	}else if (message.content.substring(0,5) === '-last') {
 		var type = 4;
-	}else if (message.content === '-samNod') {
+	}else if (message.content === '-gifs') {
 		var type = 5;
-	}else if (message.content === '-tonyCheer') {
+	}else if (message.content === '-samNod') {
 		var type = 6;
-	}else {
+	}else if (message.content === '-tonyCheer') {
 		var type = 7;
+	}else {
+		var type = 8;
 	}
 	
 	switch(type) {
@@ -92,14 +94,19 @@ client.on('message', message => {
 			var last = quoSize - minus;
 			message.channel.send(quo[last]);
 	case 5:
+			message.channel.send('-samNod
+-tonyCheer');
+	break;
+	
+	case 6:
 			message.channel.send('https://cdn.discordapp.com/attachments/411458345942384640/740639734073786448/Sammy.gif');
 	break;
 			
-	case 6:
+	case 7:
 			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641162653597786/are_you_not_entertained.gif');
 	break;
 			
-	case 7:
+	case 8:
 	break;
     	}
 	
