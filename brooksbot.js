@@ -90,7 +90,12 @@ client.on('message', message => {
 	case 5:
 	break;
     	}
-	
+	if (message.content === '-samNod') {
+    	    message.channel.send('https://cdn.discordapp.com/attachments/411458345942384640/740639734073786448/Sammy.gif');
+  	    }
+	elseif (message.content === '-tonyCheer') {
+    	    message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641162653597786/are_you_not_entertained.gif');
+  	    }
 });
 
 // THIS  MUST  BE  THIS  WAY
