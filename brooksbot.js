@@ -106,7 +106,7 @@ client.on('message', message => {
 			var last = quoSize - minus;
 			message.channel.send(quo[last]);
 	case 5:
-			message.channel.send('Possible GIF commands:\n-samNod\n-tonyCheer\n-wtf\n-terrible\m-kakkoShrug\n-dance\n-tonyOkay\n-igorCheer');
+			message.channel.send('Possible GIF commands:\n-samNod\n-tonyCheer\n-wtf\n-terrible\n-kakkoShrug\n-dance\n-tonyOkay\n-igorCheer');
 	break;
 	
 	case 6:
