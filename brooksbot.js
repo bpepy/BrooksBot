@@ -94,8 +94,7 @@ client.on('message', message => {
 			var last = quoSize - minus;
 			message.channel.send(quo[last]);
 	case 5:
-			message.channel.send('-samNod
--tonyCheer');
+			message.channel.send('Possible GIF commands:\n-samNod\n-tonyCheer');
 	break;
 	
 	case 6:
