@@ -25,14 +25,26 @@ client.on('message', message => {
 		var type = 3;
 	}else if (message.content.substring(0,5) === '-last') {
 		var type = 4;
-	}else if (message.content === '-gifs') {
+	}else if (message.content.toLowerCase() === '-gifs') {
 		var type = 5;
 	}else if (message.content === '-samNod') {
 		var type = 6;
 	}else if (message.content === '-tonyCheer') {
 		var type = 7;
-	}else {
+	}else if (message.content === '-wtf') {
 		var type = 8;
+	}else if (message.content === '-terrible') {
+		var type = 9;
+	}else if (message.content === '-kakkoShrug') {
+		var type = 10;
+	}else if (message.content === '-dance') {
+		var type = 11;
+	}else if (message.content === '-tonyOkay') {
+		var type = 12;
+	}else if (message.content === '-igorCheer') {
+		var type = 13;
+	}else {
+		var type = 14;
 	}
 	
 	switch(type) {
@@ -94,7 +106,7 @@ client.on('message', message => {
 			var last = quoSize - minus;
 			message.channel.send(quo[last]);
 	case 5:
-			message.channel.send('Possible GIF commands:\n-samNod\n-tonyCheer');
+			message.channel.send('Possible GIF commands:\n-samNod\n-tonyCheer\n-wtf\n-terrible\m-kakkoShrug\n-dance\n-tonyOkay\n-igorCheer');
 	break;
 	
 	case 6:
@@ -104,8 +116,32 @@ client.on('message', message => {
 	case 7:
 			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641162653597786/are_you_not_entertained.gif');
 	break;
-			
+		
 	case 8:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641784543182848/wtf_is_this.gif');
+	break;
+			
+	case 9:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641455613149294/fuckingTERRIBLE.gif');
+	break;
+			
+	case 10:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641609183658064/kakkoAgrees.gif');
+	break;
+			
+	case 11:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641204424933436/dudes_dancin.gif');
+	break;
+			
+	case 12:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641660953952256/mmkay.gif');
+	break;
+			
+	case 13:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641808866082836/igorCheer.gif');
+	break;
+			
+	case 14:
 	break;
     	}
 	
