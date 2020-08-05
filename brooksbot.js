@@ -43,8 +43,20 @@ client.on('message', message => {
 		var type = 12;
 	}else if (message.content === '-igorCheer') {
 		var type = 13;
-	}else {
+	}else if (message.content === '-stfu') {
 		var type = 14;
+	}else if (message.content === '-kakkoDance') {
+		var type = 15;
+	}else if (message.content === '-breadDance') {
+		var type = 16;
+	}else if (message.content === '-stagger') {
+		var type = 17;
+	}else if (message.content === '-hotBread') {
+		var type = 18;
+	}else if (message.content === '-WHAT') {
+		var type = 19;
+	}else {
+		var type = 20;
 	}
 	
 	switch(type) {
@@ -106,7 +118,7 @@ client.on('message', message => {
 			var last = quoSize - minus;
 			message.channel.send(quo[last]);
 	case 5:
-			message.channel.send('Possible GIF commands:\n-samNod\n-tonyCheer\n-wtf\n-terrible\n-kakkoShrug\n-dance\n-tonyOkay\n-igorCheer');
+			message.channel.send('Possible GIF commands:\n-samNod\n-tonyCheer\n-wtf\n-terrible\n-kakkoShrug\n-dance\n-tonyOkay\n-igorCheer\n-stfu\n-kakkoDance\n-breadDance\n-stagger\n-hotBread\n-WHAT');
 	break;
 	
 	case 6:
@@ -140,8 +152,32 @@ client.on('message', message => {
 	case 13:
 			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641808866082836/igorCheer.gif');
 	break;
-			
+		
 	case 14:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740653406368170065/shutup.gif');
+	break;
+		
+	case 15:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740653662791008486/kakkdance.gif');
+	break;
+			
+	case 16:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740654451815350324/breadjam.gif');
+	break;
+			
+	case 17:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740653859898130463/stagger.gif');
+	break;
+			
+	case 18:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740653896405614612/hotBread.gif');
+	break;
+			
+	case 19:
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740654312031781015/WHAT.gif');
+	break;
+	
+	case 20:
 	break;
     	}
 	
