@@ -150,11 +150,11 @@ client.on('message', message => {
 	break;
 			
 	case 13:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641808866082836/igorCheer.gif');
+			message.channel.send('https://cdn.discordapp.com/attachments/341677891677061121/733358973654139020/igorCheer.gif');
 	break;
 		
 	case 14:
-			message.channel.send('cdn.discordapp.com/attachments/379789033750134789/740653406368170065/shutup.gif');
+			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740653406368170065/shutup.gif');
 	break;
 		
 	case 15:
