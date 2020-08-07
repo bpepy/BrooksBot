@@ -126,7 +126,7 @@ client.on('message', message => {
 	break;
 			
 	case 7:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641162653597786/are_you_not_entertained.gif');
+			message.channel.send('https://imgur.com/a/G1MxOYj');
 	break;
 		
 	case 8:
