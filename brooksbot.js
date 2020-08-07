@@ -122,7 +122,7 @@ client.on('message', message => {
 	break;
 	
 	case 6:
-			message.channel.send('https://cdn.discordapp.com/attachments/411458345942384640/740639734073786448/Sammy.gif');
+			message.channel.send('https://imgur.com/a/ihPMgGv');
 	break;
 			
 	case 7:
@@ -130,51 +130,51 @@ client.on('message', message => {
 	break;
 		
 	case 8:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641784543182848/wtf_is_this.gif');
+			message.channel.send('https://imgur.com/a/Sw2k3f4');
 	break;
 			
 	case 9:
-			message.channel.send('https://media.discordapp.net/attachments/379789033750134789/740641455613149294/fuckingTERRIBLE.gif');
+			message.channel.send('https://imgur.com/a/VWRX5Yo');
 	break;
 			
 	case 10:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641609183658064/kakkoAgrees.gif');
+			message.channel.send('https://imgur.com/a/FkEuWqQ');
 	break;
 			
 	case 11:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641204424933436/dudes_dancin.gif');
+			message.channel.send('https://imgur.com/a/ZKxip70');
 	break;
 			
 	case 12:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740641660953952256/mmkay.gif');
+			message.channel.send('https://imgur.com/a/QaUxyST');
 	break;
 			
 	case 13:
-			message.channel.send('https://cdn.discordapp.com/attachments/341677891677061121/733358973654139020/igorCheer.gif');
+			message.channel.send('https://imgur.com/a/MnZjR6c');
 	break;
 		
 	case 14:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740653406368170065/shutup.gif');
+			message.channel.send('https://imgur.com/a/wLvGRWu');
 	break;
 		
 	case 15:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740653662791008486/kakkdance.gif');
+			message.channel.send('https://imgur.com/a/jrFKId8');
 	break;
 			
 	case 16:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740654451815350324/breadjam.gif');
+			message.channel.send('https://imgur.com/a/JPQ2wFw');
 	break;
 			
 	case 17:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740653859898130463/stagger.gif');
+			message.channel.send('https://imgur.com/a/8kseGq1');
 	break;
 			
 	case 18:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740653896405614612/hotBread.gif');
+			message.channel.send('https://imgur.com/a/MPjwyeL');
 	break;
 			
 	case 19:
-			message.channel.send('https://cdn.discordapp.com/attachments/379789033750134789/740654312031781015/WHAT.gif');
+			message.channel.send('https://imgur.com/a/gUDfpMW');
 	break;
 	
 	case 20:
