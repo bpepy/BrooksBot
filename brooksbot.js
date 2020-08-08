@@ -187,15 +187,20 @@ client.on('message', message => {
 	
 	case 20:
 			message.channel.send('https://imgur.com/BmBlCjz');
+	break;
 			
 	case 21:
 			message.channel.send('https://imgur.com/a/zEjHRHF');
+	break;
 			
 	case 22:
 			message.channel.send('https://imgur.com/a/aNa9Nky');
+	break;
 			
 	case 23:
 			message.channel.send('https://imgur.com/a/qLPeqgQ');
+	break;
+			
 	case 24:
 	break;
     	}
