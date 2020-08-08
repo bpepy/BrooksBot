@@ -154,7 +154,7 @@ client.on('message', message => {
 	break;
 		
 	case 14:
-			message.channel.send('https://imgur.com/a/wLvGRWu');
+			message.channel.send('https://imgur.com/a/54wYyAS');
 	break;
 		
 	case 15:
