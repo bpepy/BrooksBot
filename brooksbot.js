@@ -63,8 +63,10 @@ client.on('message', message => {
 		var type = 22;
 	}else if (message.content === '-sisterLover') {
 		var type = 23;
+	}else if (message.content === '-laffyCelly') {
+		var type = 24;	
 	}else {
-		var type = 24;
+		var type = 25;
 	}
 	
 	switch(type) {
@@ -125,8 +127,9 @@ client.on('message', message => {
 			}
 			var last = quoSize - minus;
 			message.channel.send(quo[last]);
+	break;
 	case 5:
-			message.channel.send('Possible GIF commands:\n-samNod\n-tonyCheer\n-wtf\n-terrible\n-kakkoShrug\n-dance\n-tonyOkay\n-igorCheer\n-stfu\n-kakkoDance\n-breadDance\n-stagger\n-hotBread\n-WHAT\n-mika\n-tonyNo\n-quinnSad\n-sisterLover');
+			message.channel.send('Possible GIF commands:\n-samNod\n-tonyCheer\n-wtf\n-terrible\n-kakkoShrug\n-dance\n-tonyOkay\n-igorCheer\n-stfu\n-kakkoDance\n-breadDance\n-stagger\n-hotBread\n-WHAT\n-mika\n-tonyNo\n-quinnSad\n-sisterLover\n-laffyCelly');
 	break;
 	
 	case 6:
@@ -200,8 +203,12 @@ client.on('message', message => {
 	case 23:
 			message.channel.send('https://imgur.com/a/qLPeqgQ');
 	break;
-			
+	
 	case 24:
+			message.channel.send('https://imgur.com/HrYxyXl');
+	break;
+			
+	case 25:
 	break;
     	}
 	
