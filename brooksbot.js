@@ -30,7 +30,7 @@ client.on('message', message => {
 	}else if (message.content === '-samNod') {
 		var type = 6;
 	}else if (message.content === '-tonyCheer') {
-		var type = 7;
+		var type = 7; 
 	}else if (message.content === '-wtf') {
 		var type = 8;
 	}else if (message.content === '-terrible') {
