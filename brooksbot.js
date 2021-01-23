@@ -227,7 +227,10 @@ client.on('message', message => {
 	break;
 			
 	case 27:
+			if (String(message.author.bot) === 'false'){
+			message.channel.send('Jack Johnson?');
 			message.channel.send('https://imgur.com/a/4CNLzem');
+			}
 	break;
 				
 	case 28:
