@@ -73,7 +73,7 @@ client.on('message', message => {
 		var type = 25;
 	}else if (message.content === '-kravSex') {
 		var type = 26;
-	}else if (wordInString(message.content.toLowerCase(),'testt')== 1) {
+	}else if (wordInString(message.content.toLowerCase(),'jack johnson')== 1) {
 		var type = 27;
 	}else {
 		var type = 28;
