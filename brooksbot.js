@@ -7,6 +7,10 @@ client.on('ready', () => {
 
 client.on('message', message => {
 	
+	function wordInString(s, word){
+ 	return new RegExp( '\\b' + word + '\\b', 'i').test(s);
+	}
+	
 	//check quotes 
 	var fs = require('fs');
 
@@ -69,8 +73,10 @@ client.on('message', message => {
 		var type = 25;
 	}else if (message.content === '-kravSex') {
 		var type = 26;
-	}else {
+	}else if (wordInString(message.content.toLowerCase(),'jack johnson')== 1) {
 		var type = 27;
+	}else {
+		var type = 28;
 	}
 	
 	switch(type) {
@@ -219,8 +225,13 @@ client.on('message', message => {
 	case 26:
 			message.channel.send('https://imgur.com/a/g7G30iZ');
 	break;
-				
+			
 	case 27:
+			message.channel.send('Jack Johnson?');
+			message.channel.send('https://imgur.com/a/4CNLzem');
+	break;
+				
+	case 28:
 	break;
     	}
 	
