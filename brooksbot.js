@@ -226,10 +226,10 @@ client.on('message', message => {
 			message.channel.send('https://imgur.com/a/g7G30iZ');
 	break;
 			
-	case 27:
-			message.channel.send('Jack Johnson?');
-			message.channel.send('https://imgur.com/a/4CNLzem');
-	break;
+	//case 27:
+	//		message.channel.send('Jack Johnson?');
+	//		message.channel.send('https://imgur.com/a/4CNLzem');
+	//break;
 				
 	case 28:
 	break;
