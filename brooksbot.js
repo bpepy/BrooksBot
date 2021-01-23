@@ -73,7 +73,7 @@ client.on('message', message => {
 		var type = 25;
 	}else if (message.content === '-kravSex') {
 		var type = 26;
-	}else if (wordInString(message.content.toLowerCase(),'jack johnson')== 1) {
+	}else if (wordInString(message.content.toLowerCase(),'testt')== 1) {
 		var type = 27;
 	}else {
 		var type = 28;
@@ -226,16 +226,11 @@ client.on('message', message => {
 			message.channel.send('https://imgur.com/a/g7G30iZ');
 	break;
 			
-	//case 27:
-	//		switch(message.author.bot) {
-	//		case true:
-	//		break;
-	//		case false:
-	//		message.channel.send('Jack Johnson?');
-	//		message.channel.send('https://imgur.com/a/4CNLzem');
-	//break;
-				
 	case 27:
+			message.channel.send('testt? \n https://imgur.com/a/4CNLzem');
+	break;
+				
+	case 28:
 	break;
     	}
 	
