@@ -7,11 +7,6 @@ client.on('ready', () => {
 
 client.on('message', message => {
 	
-	switch(message.author.bot) {
-	case true:
-	break;
-	case false:
-			
 	function wordInString(s, word){
  	return new RegExp( '\\b' + word + '\\b', 'i').test(s);
 	}
@@ -232,6 +227,10 @@ client.on('message', message => {
 	break;
 			
 	case 27:
+			switch(message.author.bot) {
+			case true:
+			break;
+			case false:
 			message.channel.send('Jack Johnson?');
 			message.channel.send('https://imgur.com/a/4CNLzem');
 	break;
