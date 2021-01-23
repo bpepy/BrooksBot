@@ -227,7 +227,7 @@ client.on('message', message => {
 	break;
 			
 	case 27:
-			message.channel.send('testt? \n https://imgur.com/a/4CNLzem');
+			message.channel.send('https://imgur.com/a/4CNLzem');
 	break;
 				
 	case 28:
