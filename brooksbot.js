@@ -73,10 +73,8 @@ client.on('message', message => {
 		var type = 25;
 	}else if (message.content === '-kravSex') {
 		var type = 26;
-	}else if (wordInString(message.content.toLowerCase(),'jack johnson')== 1) {
-		var type = 27;
 	}else {
-		var type = 28;
+		var type = 27;
 	}
 	
 	switch(type) {
@@ -225,15 +223,8 @@ client.on('message', message => {
 	case 26:
 			message.channel.send('https://imgur.com/a/g7G30iZ');
 	break;
-			
-	case 27:
-			if (String(message.author.bot) === 'false'){
-			message.channel.send('Jack Johnson?');
-			message.channel.send('https://imgur.com/a/4CNLzem');
-			}
-	break;
 				
-	case 28:
+	case 27:
 	break;
     	}
 	
