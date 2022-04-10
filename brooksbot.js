@@ -139,7 +139,7 @@ client.on('message', message => {
 			message.channel.send(quo[last]);
 	break;
 	case 5:
-			message.channel.send('Possible GIF commands:\n-samNod\n-tonyCheer\n-wtf\n-terrible\n-kakkoShrug\n-dance\n-tonyOkay\n-igorCheer\n-stfu\n-kakkoDance\n-breadDance\n-stagger\n-hotBread\n-WHAT\n-mika\n-tonyNo\n-quinnSad\n-sisterLover\n-laffyCelly\n-fistPump\n-kravSex');
+			message.channel.send('Possible GIF commands:\n-samNod\n-tonyCheer\n-wtf\n-terrible\n-kakkoShrug\n-dance\n-tonyOkay\n-igorCheer\n-stfu\n-kakkoDance\n-breadDance\n-stagger\n-hotBread\n-WHAT\n-mika\n-tonyNo\n-quinnSad\n-sisterLover\n-laffyCelly\n-fistPump\n-kravSex\n-playoffs');
 	break;
 	
 	case 6:
