@@ -73,8 +73,10 @@ client.on('message', message => {
 		var type = 25;
 	}else if (message.content === '-kravSex') {
 		var type = 26;
-	}else {
+	}else if (message.content === '-playoffs') {
 		var type = 27;
+	}else {
+		var type = 28;
 	}
 	
 	switch(type) {
@@ -223,8 +225,12 @@ client.on('message', message => {
 	case 26:
 			message.channel.send('https://imgur.com/a/g7G30iZ');
 	break;
-				
+			
 	case 27:
+			message.channel.send('https://imgur.com/a/50QTEDx');
+	break;
+				
+	case 28:
 	break;
     	}
 	
